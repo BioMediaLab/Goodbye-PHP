@@ -1,0 +1,25 @@
+{
+  "name": "goodbye-php",
+  "version": "0.0.1",
+  "description": "learning environment for matt & enoch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BioMediaLab/Goodbye-PHP.git"
+  },
+  "author": "matthew loewen & enoch lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BioMediaLab/Goodbye-PHP/issues"
+  },
+  "homepage": "https://github.com/BioMediaLab/Goodbye-PHP#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "lodash": "^4.17.11"
+  }
+}
