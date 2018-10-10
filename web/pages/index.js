@@ -4,12 +4,15 @@
 import ApolloClient from "apollo-boost";
 import gql from "graphql-tag";
 import { Query } from "react-apollo";
-import fetch from 'node-fetch';
-import { createHttpLink } from 'apollo-link-http';
+import fetch from "node-fetch";
+import { createHttpLink } from "apollo-link-http";
+import Link from "next/link";
 
-
-const link = createHttpLink({ uri: 'https://us1.prisma.sh/matthew-loewen-ae6a9f/super-cool-bud-light-api/dev', fetch: fetch });
-
+const link = createHttpLink({
+  uri:
+    "https://us1.prisma.sh/matthew-loewen-ae6a9f/super-cool-bud-light-api/dev",
+  fetch: fetch
+});
 
 // const client = new ApolloClient({
 //   uri: "https://us1.prisma.sh/matthew-loewen-ae6a9f/super-cool-bud-light-api/dev"
@@ -17,7 +20,7 @@ const link = createHttpLink({ uri: 'https://us1.prisma.sh/matthew-loewen-ae6a9f/
 
 const GET_USER = gql`
   {
-    User{
+    User {
       name
       id
     }
@@ -26,10 +29,14 @@ const GET_USER = gql`
 
 const user = () => {
   // code to get the users in the form of a react compoment
-}
-
+};
 
 const Index = () => (
-  <p></p>
-  )
-  export default Index
+  <div>
+    <h1>BioMediaLab</h1>
+    <Link href="/account">
+      <a>Account</a>
+    </Link>
+  </div>
+);
+export default Index;
