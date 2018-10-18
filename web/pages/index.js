@@ -6,7 +6,6 @@ import gql from "graphql-tag";
 import { Query } from "react-apollo";
 import fetch from "node-fetch";
 import { createHttpLink } from "apollo-link-http";
-import Link from "next/link";
 
 const link = createHttpLink({
   uri:
@@ -33,10 +32,7 @@ const user = () => {
 
 const Index = () => (
   <div>
-    <h1>BioMediaLab</h1>
-    <Link href="/account">
-      <a>Account</a>
-    </Link>
+    <h1>Welcome to Bio Media Lab</h1>
   </div>
 );
 export default Index;
