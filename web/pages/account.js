@@ -1,9 +1,9 @@
-import ApolloClient from "apollo-boost";
+import ApolloClient from 'apollo-boost';
 
 const Account = () => (
-  <div>
-    <p>This is the account page</p>
-  </div>
+	<div>
+		<p>This is the sign in page</p>
+	</div>
 );
 
 export default Account;
