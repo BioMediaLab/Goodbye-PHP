@@ -2,7 +2,7 @@ import ApolloClient from 'apollo-boost';
 
 const Account = () => (
 	<div>
-		<p>This is the sign in page</p>
+		<p>This is the log in page</p>
 	</div>
 );
 

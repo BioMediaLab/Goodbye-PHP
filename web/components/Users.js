@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import User from './User';
-
 const ALL_USERS_QUERY = gql`
 	query ALL_USERS_QUERY {
 		users {
@@ -31,3 +30,4 @@ class Users extends Component {
 }
 
 export default Users;
+export { ALL_USERS_QUERY };

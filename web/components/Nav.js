@@ -19,8 +19,13 @@ class Nav extends Component {
 					</Link>
 				</MySpan>
 				<MySpan>
+					<Link href="/signup">
+						<a>Sign up</a>
+					</Link>
+				</MySpan>
+				<MySpan>
 					<Link href="/account">
-						<a>Sign in</a>
+						<a>Log in</a>
 					</Link>
 				</MySpan>
 			</div>
