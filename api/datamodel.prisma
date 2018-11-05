@@ -1,8 +1,0 @@
-type User {
-  id: ID! @unique
-  name: String!
-  email: String! @unique
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
