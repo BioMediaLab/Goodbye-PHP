@@ -3,7 +3,7 @@ import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
 import Router from 'next/router';
 import styled from 'styled-components';
-import PasswordMask from 'react-password-mask';
+import { CURRENT_USER_QUERY } from './CurrentUser';
 
 const MyDiv = styled.div`
 	margin-left: 15px;
@@ -35,7 +35,11 @@ class CreateUser extends Component {
 	};
 	render() {
 		return (
-			<Mutation mutation={CREATE_USER_MUTATION} variables={this.state}>
+			<Mutation
+				mutation={CREATE_USER_MUTATION}
+				variables={this.state}
+				refetchQueries={[ { CURRENT_USER_QUERY } ]}
+			>
 				{(createUser, { loading, error }) => (
 					<form
 						method="post"

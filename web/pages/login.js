@@ -8,11 +8,11 @@ const Columns = styled.div`
   grid-gap: 20px;
 `;
 
-const Signup = props => (
+const Login = props => (
   <Columns>
-    <CreateUser />
     <VerifyUser />
+    <CreateUser />
   </Columns>
 );
 
-export default Signup;
+export default Login;
