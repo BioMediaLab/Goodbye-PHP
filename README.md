@@ -11,4 +11,5 @@ After cloning the repository, run
 npm run dev
 ```
 
-in both `/Goodbye-PHP/backend` and `/Goodbye-PHP/frontend`
+in both `/Goodbye-PHP/backend` and `/Goodbye-PHP/frontend`  
+Then the app will be up on `localhost:3000`
